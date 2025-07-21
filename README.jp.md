@@ -1,6 +1,6 @@
 [English](./README.md) | [日本語](./README.jp.md)
 
-# my-key-data-structures
+# My Data Structures
 このリポジトリは、ソフトウェア開発でよく使用される10の重要なデータ構造を実装したGistのコレクションです。もしお役に立てましたら、GitHubスターをいただけると嬉しいです！
 
 ## データ構造
