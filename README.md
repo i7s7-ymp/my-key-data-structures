@@ -1,6 +1,6 @@
 [English](./README.md) | [日本語](./README.jp.md)
 
-# My Data Structures
+# My Data Structures Go
 This repository is a collection of Gists implementing 10 common data structures frequently used in software development. If you find it helpful, a GitHub star would be greatly appreciated!
 
 ## Data Structures
