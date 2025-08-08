@@ -77,6 +77,9 @@
 ```go
 // 固定サイズの配列
 var arr [5]int = [5]int{1, 2, 3, 4, 5}
+
+// インデックスアクセス (O(1))
+fmt.Println("インデックス 2 の要素:", array[2])
 ```
 
 ### 特徴
@@ -91,7 +94,19 @@ var arr [5]int = [5]int{1, 2, 3, 4, 5}
 ```go
 // 動的サイズのスライス
 var slice []int = []int{1, 2, 3, 4, 5}
-slice = append(slice, 6) // 動的に要素を追加
+
+// インデックスアクセス (O(1))
+fmt.Println("インデックス 2 の要素:", slice[2])
+
+// 末尾へ動的に要素追加 (平均 O(1))
+slice = append(slice, 6)
+
+// 中間への挿入 (O(n))
+index := 2
+slice = append(slice[:index], append([]int{99}, slice[index:]...)...)
+
+// 中間からの削除 (O(n))
+slice = append(slice[:index], slice[index+1:]...)
 ```
 
 ### 特徴
